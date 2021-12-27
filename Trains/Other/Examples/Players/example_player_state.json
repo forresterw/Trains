@@ -1,0 +1,117 @@
+{
+  "this": {
+    "destination1": [
+      [
+        "Austin",
+        [
+          500,
+          700
+        ]
+      ],
+      [
+        "Washington, D.C.",
+        [
+          700,
+          400
+        ]
+      ]
+    ],
+    "destination2": [
+      [
+        "Boston",
+        [
+          700,
+          200
+        ]
+      ],
+      [
+        "New York",
+        [
+          600,
+          300
+        ]
+      ]
+    ],
+    "rails": 4,
+    "cards": {
+      "red": 0,
+      "blue": 4,
+      "green": 0,
+      "white": 0
+    },
+    "acquired": [
+      [
+        "Boston",
+        "New York",
+        "red",
+        3
+      ],
+      [
+        "Chicago",
+        "New York",
+        "white",
+        5
+      ]
+    ]
+  },
+  "game_info": {
+    "unacquired_connections": [
+      [
+        ["Los Angeles", [100, 600]],
+        ["San Diego", [150, 650]],
+        "blue",
+        4
+      ],
+      [
+        ["Reno", [200, 500]],
+        ["San Francisco", [100, 500]],
+        "red",
+        3
+      ]
+    ],
+    "cards_in_deck": 75,
+    "last_turn": false
+  },
+  "opponent_info": [
+    {
+      "connections": [
+        [
+          ["Portland", [100, 200]],
+          ["Seattle", [100, 100]],
+          "blue",
+          4
+        ],
+        [
+          ["Portland", [100, 200]],
+          ["San Francisco", [100, 500]],
+          "green",
+          5
+        ]
+      ],
+      "number_of_cards": 10
+    },
+    {
+      "connections": [
+        [
+          ["Jacksonville", [600, 700]],
+          ["Miami", [600, 800]],
+          "blue",
+          3
+        ],
+        [
+          ["Miami", [600, 800]],
+          ["New Orleans", [500, 700]],
+          "red",
+          5
+        ],
+        [
+          ["Miami", [600, 800]],
+          ["Tampa", [600, 750]],
+          "white",
+          3
+        ]
+      ],
+      "number_of_cards": 3
+    }
+  ]
+}

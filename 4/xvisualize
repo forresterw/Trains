@@ -1,0 +1,28 @@
+#!/bin/python3
+import sys, json
+sys.path.append('../')
+from Trains.Editor.map_editor import MapVisualizer
+from Trains.Other.Util.json_utils import convert_json_map_to_data_map
+
+
+def convert_json_to_data(given_map: dict):
+    """
+    Parses the given map into existing internal data definitions.
+        Parameters:
+            given_map (dict): Map from given input
+        Returns:
+            Internal Map data definition of given_map
+    """
+    data_map = convert_json_map_to_data_map(given_map)
+    return data_map
+
+
+def main():
+    raw_input = ' '.join(sys.stdin.read().split())
+    given_map = json.loads(raw_input)
+    data_map = convert_json_to_data(given_map)
+    MapVisualizer(data_map, timeout=10)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,121 @@
+(testing /vagrant/canonical/C/xjson)
+(testing /home/vagrant/repos/boise/C/Tests-0/1-in.json /home/vagrant/repos/boise/C/Tests-0/1-out.json)
+((/home/vagrant/repos/boise/C/Tests-0/1-in.json /home/vagrant/repos/boise/C/Tests-0/1-out.json))
+((passed 1) (total 1) (partial-score 1))
+(testing /vagrant/canonical/C/xjson)
+(testing /home/vagrant/repos/boise/C/Tests-1/2-in.json /home/vagrant/repos/boise/C/Tests-1/2-out.json)
+((/home/vagrant/repos/boise/C/Tests-1/2-in.json /home/vagrant/repos/boise/C/Tests-1/2-out.json))
+((passed 1) (total 1) (partial-score 1))
+(testing /vagrant/canonical/C/xjson)
+(testing /home/vagrant/repos/boise/C/Tests-2/3-in.json /home/vagrant/repos/boise/C/Tests-2/3-out.json)
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+xjson: invalid JSON strings: '#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021))) (clubs . (#hasheq((aero . (2018 2019))) #hasheq((ieee . (2018 2019 2020 2021))) #hasheq((nucalls . (2018))))) (|first name| . "stephen") (|last name| . "jayne") (major . "cecs") (nui...
+  context...:
+   body of top-level
+   /usr/share/racket/collects/racket/match/compiler.rkt:548:40: f3
+---------------------------------
+(*** score 0)
+(*** on)
+'(#hasheq((class . #hasheq((|entry year| . 2018) (|grad year| . 2021)))
+          (clubs
+           .
+           (#hasheq((aero . (2018 2019)))
+            #hasheq((ieee . (2018 2019 2020 2021)))
+            #hasheq((nucalls . (2018)))))
+          (|first name| . "stephen")
+          (|last name| . "jayne")
+          (major . "cecs")
+          (nuid . "001483298")
+          (|years active| . (2018 2019 2020 2021))))
+(*** expected)
+'(#hasheq((class . #hasheq((|entry year| . -2018) (|grad year| . -2021)))
+          (clubs
+           .
+           (#hasheq((nucalls . (-2018)))
+            #hasheq((ieee . (-2021 -2020 -2019 -2018)))
+            #hasheq((aero . (-2019 -2018)))))
+          (|first name| . "nehpets")
+          (|last name| . "enyaj")
+          (major . "scec")
+          (nuid . "892384100")
+          (|years active| . (-2021 -2020 -2019 -2018))))
+(*** but received)
+'(((plain fast with-newline plain-unicode) ())
+  ((plain fast with-newline escaped-unicode) ())
+  ((plain fast with-space plain-unicode) ())
+  ((plain fast with-space escaped-unicode) ())
+  ((plain slow with-newline plain-unicode) ())
+  ((plain slow with-newline escaped-unicode) ())
+  ((plain slow with-space plain-unicode) ())
+  ((plain slow with-space escaped-unicode) ())
+  ((pretty fast with-newline plain-unicode) ())
+  ((pretty fast with-newline escaped-unicode) ())
+  ((pretty fast with-space plain-unicode) ())
+  ((pretty fast with-space escaped-unicode) ())
+  ((pretty slow with-newline plain-unicode) ())
+  ((pretty slow with-newline escaped-unicode) ())
+  ((pretty slow with-space plain-unicode) ())
+  ((pretty slow with-space escaped-unicode) ()))
+
+
+()
+((passed 0) (total 1) (partial-score 0))

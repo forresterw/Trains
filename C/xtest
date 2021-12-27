@@ -1,0 +1,74 @@
+#!/bin/python3
+import subprocess
+from Other.json_operations import reverse_json_value
+
+
+def main():
+    tests = [
+        ("First JSON test", "cat ./Tests/1-in.json | ./xjson ", "./Tests/1-out.json"),
+        ("Second JSON test", "cat ./Tests/2-in.json | ./xjson ", "./Tests/2-out.json"),
+        ("Third JSON test", "cat ./Tests/3-in.json | ./xjson ", "./Tests/3-out.json"),
+	("Fourth JSON test", "cat ./Tests/4-in.json | ./xjson ", "./Tests/4-out.json")
+    ]
+
+    total = 0
+    for test in tests:
+        total += run_test(test)
+
+    unit_tests = [
+        ("Integer", reverse_json_value(1), -1),
+        ("Double", reverse_json_value(9.2), -9.2),
+        ("Negative Integer", reverse_json_value(-11), 11),
+        ("Negative Float", reverse_json_value(-2.1), 2.1),
+        ("String", reverse_json_value("word"), "drow"),
+        ("Boolean True", reverse_json_value(True), False),
+        ("Boolean False", reverse_json_value(False), True),
+        ("None/null", reverse_json_value(None), None),
+        ("Array of ints", reverse_json_value([1, 2, 3, 4]), [-4, -3, -2, -1]),
+        ("Array of strings", reverse_json_value(["first", "second", "third"]), ["driht", "dnoces", "tsrif"]),
+        ("Object", reverse_json_value({"int": 3, "string": "word", "bool": True, "array": [1, 2, 3]}), {"int": -3, "string": "drow", "bool": False, "array": [-3, -2, -1]}),
+        ("Nested Object", reverse_json_value({"int": 3, "nested_object": {"name": "bill", "age": 28}}), {"int": -3, "nested_object": {"name": "llib", "age": -28}})
+    ]
+    for test in unit_tests:
+        total += run_unit_test(test)
+    print(f"\nTests Passed: {total}/{len(tests) + len(unit_tests)}")
+
+
+def run_test(test):
+    name = test[0]
+    cmd = test[1]
+    expected = open(test[2]).readlines()
+    expected = "\\n".join([x.replace('\n','') for x in expected]) + "\\n"
+    
+    out = subprocess.check_output(cmd, shell=True)
+    out_str = str(out)[2:-1]
+
+    if out_str == expected:
+        print(f"Passed: {name}")
+        return 1
+    else:
+        print(f"Failed: {name}")
+        print(f"Out: {out_str}")
+        print(f"Expected: {expected}")
+        print("=============")
+        return 0
+
+
+def run_unit_test(test):
+    name = test[0]
+    actual = test[1]
+    expected = test[2]
+
+    if actual == expected:
+        print(f"Passed: {name}")
+        return 1
+    else:
+        print(f"Failed: {name}")
+        print(f"Out: {actual}")
+        print(f"Expected: {expected}")
+        print("=============")
+        return 0
+
+
+if __name__ == "__main__":
+    main()

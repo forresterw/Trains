@@ -1,0 +1,8 @@
+"New York"
+"Washington, D.C."
+{ 
+   "width": 800,
+   "height": 800,
+   "cities": [["Washington, D.C.", [600, 500]], ["New York", [700, 400]]],
+   "connections": {"New York": {"Washington, D.C.": {"blue": 3}}}
+}

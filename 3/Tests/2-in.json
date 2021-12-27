@@ -1,0 +1,10 @@
+"Boston"
+"Washington, D.C."
+{ "width": 800,
+   "height": 800,
+   "cities": [["Washington, D.C.", [600, 500]], ["New York", [700, 400]], ["Boston", [800, 300]], ["Trenton", [650, 450]]],
+   "connections": {"Boston": {"New York": {"blue": 5}},
+                   "New York": {"Trenton": {"red": 4}},
+                   "Trenton": {"Washington, D.C.": {"green": 3}}
+                }
+}

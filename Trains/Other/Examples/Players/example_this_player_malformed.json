@@ -1,0 +1,12 @@
+{
+        "destination1": ["Austin", "Washington, D.C."],
+        "destination2": ["Boston", "New York"],
+        "rails": 4,
+        "cards": {
+            "red": 0,
+            "blue": 4,
+            "green": 0,
+            "white": 0
+        },
+        "acquired": ["Boston", "New York", "red", 3]
+    }

@@ -1,0 +1,28 @@
+#!/bin/python3
+import sys, json
+from tkinter import Tk, Canvas
+
+def draw_graph(graph):
+    window = Tk()
+    SIZE = graph["size"]
+    canvas = Canvas(window, bg="orange", width=SIZE, height=SIZE, highlightthickness=0, border=False)
+    radius = 5
+    line_width = 2
+    all_posn = graph["nodes"]
+    for i in range(len(all_posn)):
+        # Draw point
+        x1, y1 = all_posn[i]
+        canvas.create_oval(x1 - radius, y1 - radius, x1 + radius, y1 + radius, fill="black")
+        for j in range(i + 1, len(all_posn)):
+            # Draw line to every other distinct point
+            x2, y2 = all_posn[j]
+            line = canvas.create_line(x1, y1, x2, y2, width=line_width, fill="red")
+            canvas.tag_lower(line)
+    canvas.pack()
+    window.after(3000, lambda: window.destroy())
+    window.mainloop()
+
+if __name__ == "__main__":
+    raw_input = sys.stdin.read()
+    graph = json.loads(raw_input)
+    draw_graph(graph)

@@ -1,0 +1,31 @@
+{ 
+    "width": 800,
+    "height": 800,
+    "cities": [["Bismarck", [400, 100]], ["Washington, D.C.", [600, 500]], ["New York", [700, 400]], ["Boston", [800, 300]], ["Trenton", [800, 500]], ["Seattle", [100, 50]], ["Sacramento", [200, 500]], ["Austin", [400, 700]]],
+    "connections": {
+                    "Austin": {"Washington, D.C.": {"blue": 4, "red": 4, "green": 4, "white": 4}},
+                    "Bismarck": {},
+                    "Boston": {
+                            "New York": {"blue": 3, "red": 3},
+                            "Trenton": {"white": 4}
+                         },
+                    "New York": {"Trenton": {"red": 3, "green": 3}},
+                    "Sacramento": {"Seattle": {"blue": 5, "red": 5, "green": 5}},
+                    "Trenton": {"Washington, D.C.": {"green": 3, "blue": 3}}
+                 }
+}
+{
+    "this": {
+        "destination1": ["Austin", "Washington, D.C."],
+        "destination2": ["Boston", "New York"],
+        "rails": 10,
+        "cards": {
+            "red": 5,
+            "green": 1,
+            "white": 11,
+            "blue": 5
+        },
+        "acquired": [["Boston", "New York", "red", 3]]
+    },
+    "acquired": [[["Austin", "Washington, D.C.", "blue", 4], ["Boston", "New York", "blue", 3]], [["Boston", "Trenton", "white", 4]]]
+}

@@ -1,0 +1,78 @@
+Conversions:
+- Map --> JSON
+- Cards (array of cards) --> JSON
+    Dictionary to array
+- Destination --> JSON 
+    Set fo destinations --> Array of destinations
+- PlayerState --> JSON
+    Fix get_as_json in PlayerGameState class
+- Action --> JSON
+    Remove unnecessary Data
+- Connection --> JSON
+    See "Acquired" in previous test harness specs
+
+TODO: Create Factory for converting method calls to JSON
+---------------------------
+API Method JSON Calls
+
+start:
+["start", [true]]
+
+{
+    "width": 800,
+    "height": 800,
+    "cities": [
+        ["Bismarck", [400, 100]],
+        ["Washington, D.C.", [600, 500]],
+        ["New York", [700, 400]],
+        ["Boston", [800, 300]],
+        ["Trenton", [800, 500]],
+        ["Seattle", [100, 50]],
+        ["Sacramento", [200, 500]],
+        ["Austin", [400, 700]]
+    ],
+    "connections": {
+        "Austin": {
+            "Boston": { "blue": 4 }
+        },
+        "Boston": {
+            "New York": { "red": 3 }
+        },
+        "New York": { 
+            "Trenton": { "green": 3 } 
+        }
+    }
+}
+
+setup:
+["setup", [Map, 45, ["red", "blue", "green", "white"]]]
+
+pick:
+["pick", [["City1", "City2"], ["City1", "City2"], ["City1", "City2"], ["City1", "City2"], ["City1", "City2"]]]
+
+[["City1", "City2"], ["City1", "City2"], ["City1", "City2"]]
+
+play:
+["play", [{
+    "this_player": {
+        "destination1": ["City1", "City2"],
+        "destination2": ["City1", "City2"],
+        ...
+    },
+    "acquired": [Connection]
+}]]
+
+    DrawCardAction:
+    "more cards"
+
+    AcquireConnectionAction:
+    ["City1", "City2", "red", 3]
+
+more:
+["more", ["red", "blue"]]
+
+win:
+["win", [true|false]]
+
+end:
+["end", [true|false]]

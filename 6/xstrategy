@@ -1,0 +1,62 @@
+#!/bin/python3
+import sys, json
+
+sys.path.append('../')
+from Trains.Other.Util.json_utils import convert_json_map_to_data_map, convert_json_player_game_state_xlegal, seperate_json_inputs, convert_data_connection_to_acquired
+from Trains.Player.moves import MoveType 
+from Trains.Player.hold_10_player import Hold_10_Player
+
+
+
+def convert_json_to_data(given_map: dict, given_player_state: dict):
+    """
+    Converts a json string representation of a map and map elements to internal data definitions (Map, Connection, PlayerResources)
+        Parameters:
+            given_map (dict): Dictionary representation of the given map
+            given_player_state (dict): Dictionary representation of the given player game state
+            given_acquired (list): List representation of the given connection being acquired [Name, Name, Color, Length]
+        Returns:
+            A Map object of the given json string representation of game map,
+            A PlayerResources object of the given json string representation of a player game state,
+            A set of Connection objects that represent the given json string representation of other player's connections,
+            A Connection object of the given json string representation of the connection the active player wishes to acquire
+    """
+    data_map = convert_json_map_to_data_map(given_map)
+    player_state, other_player_connections = convert_json_player_game_state_xlegal(given_player_state, data_map)
+    return data_map, player_state, other_player_connections
+
+
+def data_move_to_json(data_move):
+    if data_move.move_type == MoveType.DRAW_CARDS:
+        return "\"more cards\""
+    elif data_move.move_type == MoveType.ACQUIRE_CONNECTION:
+        return convert_data_connection_to_acquired(data_move.connection)
+    else:
+        raise ValueError
+
+
+def get_move_from_player_state(player_state):
+    # Make a strategy
+    test_player = Hold_10_Player("test", 22)
+    test_player.update_player_game_state(player_state)
+    data_move = test_player.play(player_state)
+
+    return data_move_to_json(data_move)
+
+
+def main():
+    # Read in input from STDIN (json strings)
+    raw_input = ' '.join(sys.stdin.read().split())
+    # Convert inputted json strings to python types
+    given_map, given_player_state = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+
+    # Gets the internal data defintion versions of the input
+    _, player_state, _ = convert_json_to_data(given_map, given_player_state)
+
+    output_move = get_move_from_player_state(player_state)
+    # Writes the output to STDOUT
+    sys.stdout.write(output_move)
+
+
+if __name__ == "__main__":
+    main()

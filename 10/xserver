@@ -1,0 +1,73 @@
+#!/bin/python3
+import asyncio
+from collections import deque
+import sys, json
+import random
+sys.path.append('../')
+
+
+from Trains.Other.Util.json_utils import COLORS, seperate_json_inputs
+
+sys.path.append('../')
+from Trains.Common.map import Color
+from Trains.Remote.server import Server
+from Trains.Remote.server_proxy import ServerProxy
+
+HOSTNAME = '127.0.0.1'
+PORT = 45730
+
+def exit_program(error_message=None):
+    """
+    Unified exit point of asynchronous program
+            Parameters:
+                    error_messsage (str): message to print
+    """
+    if error_message is not None:
+        sys.stdout.write(error_message)
+    sys.exit()
+
+def parse_input():
+    """
+    Validate command line args and change port number accordingly
+    """
+    global PORT
+
+    if len(sys.argv) > 2:
+        exit_program("Too many args\n")
+    elif len(sys.argv) == 2:
+        if sys.argv[1].isdigit():
+            user_port = int(sys.argv[1])
+            if user_port >= 2048 and user_port <= 65535:
+                PORT = user_port
+            else:
+                exit_program("Port out of range [2048, 65535]\n")
+        else:
+            exit_program("Malformed port input, Example: 45678\n")
+
+def main():
+    parse_input()
+    raw_input = ' '.join(sys.stdin.read().split())
+
+    # Convert inputted json strings to python types
+    deck_index = 2
+    given_deck = [json.loads(value) for value in seperate_json_inputs(raw_input)][deck_index]
+
+    deck_data = deque([COLORS[color] for color in given_deck])
+
+    deck = deque()
+    for _ in range(250):
+        next_card = Color(random.randint(1, Color.number_of_colors()))
+        deck.append(next_card)
+
+    server = Server(HOSTNAME, PORT, 5, 50, 10, deck_data)
+    winners, banned_players = server.run_server()
+
+    winners = [player.name for player in winners]
+    banned_players = [player.name for player in banned_players]
+    output = [winners, banned_players]
+    # Writes the output to STDOUT
+    sys.stdout.write(json.dumps(output))
+
+
+if __name__ == "__main__":
+    main()

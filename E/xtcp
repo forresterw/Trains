@@ -1,0 +1,100 @@
+#!/bin/python3
+
+import asyncio
+import subprocess
+import sys
+
+HOST = 'localhost'
+PORT = 45678
+CONNECTION = False
+
+
+class XJSONServer(asyncio.Protocol):
+    """
+    Implement tcp server that calls xjson on input and returns output
+    """
+    def connection_made(self, transport):
+        """
+        Establish a connection to the client(Handler)
+            Parameters:
+                    transport (Transport): object representing connection/pipe
+        """
+        global CONNECTION
+        CONNECTION = True
+        self.transport = transport
+
+    def data_received(self, data):
+        """
+        Send message back to client, reversed by xjson(Handler)
+            Parameters:
+                    data (bytes): incoming json stream from client
+        """
+        inverted_message = subprocess.check_output("../C/xjson", shell=True,
+                                                   universal_newlines=True,
+                                                   input=data.decode())
+        self.transport.write(inverted_message.encode())
+        self.transport.close()
+        exit_program()
+
+
+async def connection_timeout(time):
+    """
+    Provide timeout to wait for connection
+            Parameters:
+                    time (int): number of seconds before timeout
+    """
+    await asyncio.sleep(time)
+    if not CONNECTION:
+        exit_program(f"No connection in {time} seconds\n")
+
+
+def parse_input():
+    """
+    Validate command line args and change port number accordingly
+    """
+    global PORT
+
+    if len(sys.argv) > 2:
+        exit_program("Too many args\n")
+    elif len(sys.argv) == 2:
+        if sys.argv[1].isdigit():
+            user_port = int(sys.argv[1])
+            if user_port >= 2048 and user_port <= 65535:
+                PORT = user_port
+            else:
+                exit_program("Port out of range [2048, 65535]\n")
+        else:
+            exit_program("Malformed port input, Example: 45678\n")
+
+
+def exit_program(error_message=None):
+    """
+    Unified exit point of asynchronous program
+            Parameters:
+                    error_messsage (str): message to print
+    """
+    if error_message is not None:
+        sys.stdout.write(error_message)
+    sys.exit()
+
+
+def main():
+    """
+    Start a tcp server that reverses an incoming stream of json inputs
+    Times out after 3 seconds
+    """
+    # Parse and validate port argument, if present
+    parse_input()
+
+    # Define asynchronous server behavior and protocol
+    loop = asyncio.get_event_loop()
+    server_protocol = loop.create_server(XJSONServer, HOST, PORT)
+    server = loop.run_until_complete(server_protocol)
+
+    # Run the server until timeout or the process finishes
+    loop.run_until_complete(connection_timeout(3))
+    loop.run_until_complete(server.wait_closed())
+
+
+if __name__ == "__main__":
+    main()

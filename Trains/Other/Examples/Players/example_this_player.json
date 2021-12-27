@@ -1,0 +1,55 @@
+{
+  "destination1": [
+    [
+      "Austin",
+      [
+        500,
+        700
+      ]
+    ],
+    [
+      "Washington, D.C.",
+      [
+        700,
+        400
+      ]
+    ]
+  ],
+  "destination2": [
+    [
+      "Boston",
+      [
+        700,
+        200
+      ]
+    ],
+    [
+      "New York",
+      [
+        600,
+        300
+      ]
+    ]
+  ],
+  "rails": 4,
+  "cards": {
+    "red": 0,
+    "blue": 4,
+    "green": 0,
+    "white": 0
+  },
+  "acquired": [
+    [
+      "Boston",
+      "New York",
+      "red",
+      3
+    ],
+    [
+      "Chicago",
+      "New York",
+      "white",
+      5
+    ]
+  ]
+}

@@ -1,0 +1,2137 @@
+(testing /home/vagrant/repos/boise/E/xtcp)
+(testing /vagrant/canonical/E/Tests/1-in.json /vagrant/canonical/E/Tests/1-out.json)
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 11 (char 10)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 4 (char 3)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 11 (char 10)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 4 (char 3)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 11 (char 10)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 4 (char 3)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 11 (char 10)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 4 (char 3)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 3 (char 2)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 3 (char 2)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 3 (char 2)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 3 (char 2)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+---------------------------------
+(*** score 1/2)
+(*** on)
+'(("hellow" 100))
+(*** expected)
+'((-100 "wolleh"))
+(*** but received)
+'(((plain fast with-newline plain-unicode) ((-100 "wolleh")))
+  ((plain fast with-newline escaped-unicode) ((-100 "wolleh")))
+  ((plain fast with-space plain-unicode) ((-100 "wolleh")))
+  ((plain fast with-space escaped-unicode) ((-100 "wolleh")))
+  ((plain slow with-newline plain-unicode) ())
+  ((plain slow with-newline escaped-unicode) ())
+  ((plain slow with-space plain-unicode) ())
+  ((plain slow with-space escaped-unicode) ())
+  ((pretty fast with-newline plain-unicode) ((-100 "wolleh")))
+  ((pretty fast with-newline escaped-unicode) ((-100 "wolleh")))
+  ((pretty fast with-space plain-unicode) ((-100 "wolleh")))
+  ((pretty fast with-space escaped-unicode) ((-100 "wolleh")))
+  ((pretty slow with-newline plain-unicode) ())
+  ((pretty slow with-newline escaped-unicode) ())
+  ((pretty slow with-space plain-unicode) ())
+  ((pretty slow with-space escaped-unicode) ()))
+
+
+(testing /vagrant/canonical/E/Tests/2-in.json /vagrant/canonical/E/Tests/2-out.json)
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 1 column 11 (char 10)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 1 column 11 (char 10)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 1 column 11 (char 10)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 1 column 11 (char 10)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+---------------------------------
+(*** score 1/2)
+(*** on)
+'(#hasheq((a . 1) (b . 2)))
+(*** expected)
+'(#hasheq((a . -1) (b . -2)))
+(*** but received)
+'(((plain fast with-newline plain-unicode) (#hasheq((a . -1) (b . -2))))
+  ((plain fast with-newline escaped-unicode) (#hasheq((a . -1) (b . -2))))
+  ((plain fast with-space plain-unicode) (#hasheq((a . -1) (b . -2))))
+  ((plain fast with-space escaped-unicode) (#hasheq((a . -1) (b . -2))))
+  ((plain slow with-newline plain-unicode) ())
+  ((plain slow with-newline escaped-unicode) ())
+  ((plain slow with-space plain-unicode) ())
+  ((plain slow with-space escaped-unicode) ())
+  ((pretty fast with-newline plain-unicode) (#hasheq((a . -1) (b . -2))))
+  ((pretty fast with-newline escaped-unicode) (#hasheq((a . -1) (b . -2))))
+  ((pretty fast with-space plain-unicode) (#hasheq((a . -1) (b . -2))))
+  ((pretty fast with-space escaped-unicode) (#hasheq((a . -1) (b . -2))))
+  ((pretty slow with-newline plain-unicode) ())
+  ((pretty slow with-newline escaped-unicode) ())
+  ((pretty slow with-space plain-unicode) ())
+  ((pretty slow with-space escaped-unicode) ()))
+
+
+(testing /vagrant/canonical/E/Tests/3-in.json /vagrant/canonical/E/Tests/3-out.json)
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 8 (char 7)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 5 (char 4)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 8 (char 7)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 5 (char 4)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 8 (char 7)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 5 (char 4)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 8 (char 7)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 9 (char 8)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 5 (char 4)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "../C/xjson", line 42, in <module>
+    main()
+  File "../C/xjson", line 32, in main
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "../C/xjson", line 32, in <listcomp>
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in callback _SelectorSocketTransport._read_ready()
+handle: <Handle _SelectorSocketTransport._read_ready()>
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/usr/lib64/python3.6/asyncio/selector_events.py", line 721, in _read_ready
+    self._protocol.data_received(data)
+  File "/home/vagrant/repos/boise/E/xtcp", line 34, in data_received
+    input=data.decode())
+  File "/usr/lib64/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '../C/xjson' returned non-zero exit status 1.
+---------------------------------
+(*** score 1/2)
+(*** on)
+'(#hasheq((ax . 0) (by . (1 2 #hasheq((c . ("ab" "cd")))))))
+(*** expected)
+'(#hasheq((ax . 0) (by . (#hasheq((c . ("dc" "ba"))) -2 -1))))
+(*** but received)
+'(((plain fast with-newline plain-unicode)
+   (#hasheq((ax . 0) (by . (#hasheq((c . ("dc" "ba"))) -2 -1)))))
+  ((plain fast with-newline escaped-unicode)
+   (#hasheq((ax . 0) (by . (#hasheq((c . ("dc" "ba"))) -2 -1)))))
+  ((plain fast with-space plain-unicode)
+   (#hasheq((ax . 0) (by . (#hasheq((c . ("dc" "ba"))) -2 -1)))))
+  ((plain fast with-space escaped-unicode)
+   (#hasheq((ax . 0) (by . (#hasheq((c . ("dc" "ba"))) -2 -1)))))
+  ((plain slow with-newline plain-unicode) ())
+  ((plain slow with-newline escaped-unicode) ())
+  ((plain slow with-space plain-unicode) ())
+  ((plain slow with-space escaped-unicode) ())
+  ((pretty fast with-newline plain-unicode)
+   (#hasheq((ax . 0) (by . (#hasheq((c . ("dc" "ba"))) -2 -1)))))
+  ((pretty fast with-newline escaped-unicode)
+   (#hasheq((ax . 0) (by . (#hasheq((c . ("dc" "ba"))) -2 -1)))))
+  ((pretty fast with-space plain-unicode)
+   (#hasheq((ax . 0) (by . (#hasheq((c . ("dc" "ba"))) -2 -1)))))
+  ((pretty fast with-space escaped-unicode)
+   (#hasheq((ax . 0) (by . (#hasheq((c . ("dc" "ba"))) -2 -1)))))
+  ((pretty slow with-newline plain-unicode) ())
+  ((pretty slow with-newline escaped-unicode) ())
+  ((pretty slow with-space plain-unicode) ())
+  ((pretty slow with-space escaped-unicode) ()))
+
+
+()
+((passed 0) (total 3) (partial-score 3/2))

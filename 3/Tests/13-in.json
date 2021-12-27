@@ -1,0 +1,19 @@
+"Seattle"
+"Dallas"
+{
+    "cities":[
+        ["Chicago", [250, 50]], ["Dallas", [250, 250]], ["Seattle", [10, 10]]
+    ],
+    "connections":{
+        "Chicago": {
+            "Dallas": {
+                "blue": 3, "green": 3, "red": 5
+            },
+            "Seattle": {
+                "blue": 3, "green": 5, "red": 4
+            }
+        }
+    },
+    "width": 300,
+    "height": 500
+}

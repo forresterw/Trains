@@ -1,0 +1,23 @@
+#!/bin/python3
+import sys
+
+
+def main():
+    if len(sys.argv) != 2:
+        sys.stdout.write("\"error\"")
+        return
+
+    arg = sys.argv[1]
+    if arg[0] == '-' and arg[1:].isdigit() and int(arg[1:]) != 0:
+        num = int(arg[1:])
+        lines = sys.stdin.readlines()
+        if num >= len(lines):
+            num = len(lines)
+        sys.stdout.writelines(lines[:num])
+    else:
+        sys.stdout.write("\"error\"")
+        return
+
+
+if __name__ == "__main__":
+    main()

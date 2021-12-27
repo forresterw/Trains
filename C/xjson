@@ -1,0 +1,42 @@
+#!/bin/python3
+import sys
+import json
+from Other.json_operations import reverse_json_value
+
+
+def seperate_json_inputs(input):
+    open_objects = 0
+    open_lists = 0
+    starting_place = 0
+    outputs = []
+
+    for i in range(len(input)):
+        if input[i] == "{":
+            open_objects += 1
+        elif input[i] == "}":
+            open_objects -= 1
+        elif input[i] == "[":
+            open_lists += 1
+        elif input[i] == "]":
+            open_lists -= 1
+        elif input[i] == " " and open_lists == 0 and open_objects == 0:
+            outputs.append(input[starting_place:i])
+            starting_place = i + 1
+
+    outputs.append(input[starting_place:])
+    return outputs
+
+
+def main():
+    raw_input = ' '.join(sys.stdin.read().split())
+    list_of_json = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+    list_of_reversed_json = [reverse_json_value(value) for value in list_of_json]
+
+    # Print each value to stdout separated by spaces as appropriate
+    for x in range(len(list_of_reversed_json)):
+        output = json.dumps(list_of_reversed_json[x])
+        sys.stdout.write(output + "\n")
+
+
+if __name__ == "__main__":
+    main()

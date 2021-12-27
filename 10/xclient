@@ -1,0 +1,97 @@
+#!/bin/python3
+import threading
+from collections import deque
+import sys, json
+sys.path.append('../')
+import random
+import asyncio
+
+
+
+from Trains.Other.Util.json_utils import convert_json_map_to_data_map, convert_json_players_to_player_given_map_list, \
+    seperate_json_inputs
+
+sys.path.append('../')
+from Trains.Remote.server_proxy import ServerProxy
+
+PORT = 45730
+HOSTNAME = '127.0.0.1'
+
+def convert_json_to_data(given_map: dict, given_players: list, deck: list):
+    """
+    Converts a json string representation of a map, players in a game of Trains, and the Referee's starting deck into internal representations
+    of each one.
+        Parameters:
+            given_map (dict): Dictionary representation of the given map
+            given_players (list): List of PlayerInstances, which are lists of length two containing player and startegy name, respectively.
+            deck (list): List of colors representing the referees starting deck.
+        Returns:
+            A Map object of the given json string representation of game map,
+            A list of player objects initialized with their corresponding strategies,
+            A deque that represents the deck used in the game
+    """
+    data_map = convert_json_map_to_data_map(given_map)
+    players = convert_json_players_to_player_given_map_list(given_players, data_map)
+    return data_map, players
+
+def exit_program(error_message=None):
+    """
+    Unified exit point of asynchronous program
+            Parameters:
+                    error_messsage (str): message to print
+    """
+    if error_message is not None:
+        sys.stdout.write(error_message)
+    sys.exit()
+
+def parse_input():
+    """
+    Validate command line args and change port number accordingly
+    """
+    global PORT
+
+    if len(sys.argv) > 2:
+        exit_program("Too many args\n")
+    elif len(sys.argv) == 2:
+        if sys.argv[1].isdigit():
+            user_port = int(sys.argv[1])
+            if user_port >= 2048 and user_port <= 65535:
+                PORT = user_port
+            else:
+                exit_program("Port out of range [2048, 65535]\n")
+        else:
+            exit_program("Malformed port input, Example: 45678\n")
+
+def main():
+    parse_input()
+
+    raw_input = ' '.join(sys.stdin.read().split())
+
+    # Convert inputted json strings to python types
+    given_map, given_player_instances, _ = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+
+    # Gets the internal data defintion versions of the input
+    data_map = convert_json_map_to_data_map(given_map)
+
+    clients = []
+    client_threads = []
+
+    for json_player in given_player_instances:
+        name_index = 0
+        strategy_name_index = 1
+        player_name = json_player[name_index]
+        player_strategy = json_player[strategy_name_index]
+        server_proxy = ServerProxy(HOSTNAME, PORT, player_name, player_strategy, data_map)
+        clients.append(server_proxy)
+        client_threads.append(threading.Thread(target=server_proxy.play_game))
+
+    for thread in client_threads:
+        thread.start()
+    for thread in client_threads:
+        thread.join()
+    #clients[0].play_game()
+
+if __name__ == "__main__":
+    main()
+    # player = ServerProxy(HOSTNAME, PORT, "Test", "Hold-10", None)
+    # player.play_game()

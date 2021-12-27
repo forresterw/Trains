@@ -1,0 +1,1 @@
+{"name": "steve", "age": 33, "lists": [["random", "strings", "list"], [12.2, -9.5, 7, -4, 0], [true, null, false], [{"str1": "couch", "val1": 29.123, "list1": [-2, false, null, "entry", {"object_ls": "deep"}]}, {"str1": "carpet", "val1": -12, "list1": [5.392, true, null, "item", {"object_ls": "far"}]}]]}

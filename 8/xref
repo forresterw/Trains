@@ -1,0 +1,63 @@
+#!/bin/python3
+from collections import deque
+import sys, json
+
+sys.path.append('../')
+from Trains.Other.Util.json_utils import COLORS, convert_json_map_to_data_map, \
+    convert_json_players_to_player_list, seperate_json_inputs
+from Trains.Admin.referee import Referee, NotEnoughDestinations
+
+
+def convert_json_to_data(given_map: dict, given_players: list, deck: list):
+    """
+    Converts a json string representation of a map, players in a game of Trains, and the Referee's starting deck into internal representations
+    of each one.
+        Parameters:
+            given_map (dict): Dictionary representation of the given map
+            given_players (list): List of PlayerInstances, which are lists of length two containing player and startegy name, respectively.
+            deck (list): List of colors representing the referees starting deck.
+        Returns:
+            A Map object of the given json string representation of game map,
+            A list of player objects initialized with their corresponding strategies,
+            A deque that represents the deck used in the game
+    """
+    data_map = convert_json_map_to_data_map(given_map)
+    players = convert_json_players_to_player_list(given_players)
+    deck = deque([COLORS[color] for color in deck])
+    return data_map, players, deck
+
+
+def main():
+    # Read in input from STDIN (json strings)
+    raw_input = ' '.join(sys.stdin.read().split())
+
+    # Convert inputted json strings to python types
+    given_map, given_player_instances, given_deck = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+
+    # Gets the internal data defintion versions of the input
+    game_map, players, deck = convert_json_to_data(given_map, given_player_instances, given_deck)
+
+    try:
+        ref = Referee(game_map, players, deck)
+    except NotEnoughDestinations:
+        sys.stdout.write("\"error: not enough destinations\"")
+        return
+
+    rankings, banned_players = ref.play_game()
+    rankings_out = []
+    for rank in rankings:
+        curr_rank = []
+        for player_tuple in rank:
+            curr_rank.append(player_tuple[0].name)
+        rankings_out.append(curr_rank)
+    
+    banned_players_out = [player.name for player in banned_players]
+
+    output = [rankings_out, banned_players_out]
+
+    # Writes the output to STDOUT
+    sys.stdout.write(json.dumps(output))
+
+
+if __name__ == "__main__":
+    main()

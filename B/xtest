@@ -1,0 +1,46 @@
+#!/bin/python3
+import subprocess
+
+
+def main():
+    error = "\"error\""
+    tests = [
+        ("Correct four file test equal arg script", "ls | ./xhead -4", "Makefile\\nREADME.md\\nxhead\\nxtest\\n"),
+        ("Correct four file test larger arg script", "ls | ./xhead -6", "Makefile\\nREADME.md\\nxhead\\nxtest\\n"),
+        ("Correct four file test smaller arg script", "ls | ./xhead -1", "Makefile\\n"),
+        ("Malformed 0 arg script", "ls | ./xhead -0", error),
+        ("Missing arg script", "ls | ./xhead", error),
+        ("Malformed string arg script", "ls | ./xhead -five", error),
+        ("Malformed negative num arg script", "ls | ./xhead --2", error),
+        ("Malformed decimal num arg script", "ls | ./xhead -2.1", error),
+        ("Malformed number no arg dash script", "ls | ./xhead 2", error),
+        ("Malformed string no arg dash script", "ls | ./xhead two", error),
+        ("Malformed too many args script", "ls | ./xhead -2 -5", error)
+        ]
+
+    total = 0
+    for test in tests:
+        total += run_test(test)
+    print(f"\nTests Passed: {total}/{len(tests)}")
+
+
+def run_test(test):
+    name = test[0]
+    cmd = test[1]
+    expected = test[2]
+
+    out = subprocess.check_output(cmd, shell=True)
+    out_str = str(out)[2:-1].replace("\\r", "")
+    if out_str == expected:
+        print(f"Passed: {name}")
+        return 1
+    else:
+        print(f"Failed: {name}")
+        print(f"Out: {out_str}")
+        print(f"Expected: {expected}")
+        print("=============")
+        return 0
+
+
+if __name__ == "__main__":
+    main()

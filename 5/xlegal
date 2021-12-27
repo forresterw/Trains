@@ -1,0 +1,75 @@
+#!/bin/python3
+from collections import deque
+import sys, json
+
+sys.path.append('../')
+from Trains.Common.player_game_state import PlayerGameState
+from Trains.Common.map import Color, Destination, City, Map, Connection
+from Trains.Admin.referee_game_state import RefereeGameState
+from Trains.Other.Util.json_utils import convert_json_connection_to_data, convert_json_map_to_data_map, convert_json_player_game_state_xlegal, seperate_json_inputs
+
+
+def convert_json_to_data(given_map: dict, given_player_state: dict, given_acquired: list):
+    """
+    Converts a json string representation of a map and map elements to internal data definitions (Map, Connection, PlayerResources)
+        Parameters:
+            given_map (dict): Dictionary representation of the given map
+            given_player_state (dict): Dictionary representation of the given player game state
+            given_acquired (list): List representation of the given connection being acquired [Name, Name, Color, Length]
+        Returns:
+            A Map object of the given json string representation of game map,
+            A PlayerResources object of the given json string representation of a player game state,
+            A set of Connection objects that represent the given json string representation of other player's connections,
+            A Connection object of the given json string representation of the connection the active player wishes to acquire
+    """
+    data_map = convert_json_map_to_data_map(given_map)
+    player_state, other_player_connections = convert_json_player_game_state_xlegal(given_player_state, data_map)
+    acquired = convert_json_connection_to_data(given_acquired, data_map)
+
+    return data_map, player_state, acquired, other_player_connections
+
+
+def check_legal(data_map: Map, player_state: PlayerGameState, acquired: Connection, other_player_connections: set):
+    """
+    Determines whether or not a given connection can be legally acquired based on available resources and if the connection is not already acquired.
+    Uses a dummy player with its acquired connections set as other_player_connections as to put our implementation of a referee game state to use.
+        Parameters:
+            data_map (Map): The game map
+            player_state (PlayerResources): The player game state of the player attempting to acquire the connection
+            acquired (Connection): The connection that is being acquired (attempted to)
+            other_player_connections (set(Connection)): The set of connections that other players have acquired
+        Returns:
+            True if the connection being acquired is legally acquirable based on the given information (player game state and other player connections),
+            False otherwise
+    """
+    # Dummy cities and destinations to be able to initialize a dummy player and create a player game state representation for other player connections below (pr2)
+    dummy1 = City("Dummy1", 60, 70)
+    dummy2 = City("Dummy2", 50, 70)
+    dummy3 = City("Dummy3", 70, 80)
+    dest1 = Destination({dummy1, dummy2})
+    dest2 = Destination({dummy1, dummy3})
+    pg2 = PlayerGameState(other_player_connections, {Color.RED: 0, Color.BLUE: 0, Color.GREEN: 0, Color.WHITE: 0}, 0, {dest1, dest2}, dict(), [])
+    
+    test_ref = RefereeGameState(data_map, deque(), [player_state, pg2])
+
+    return test_ref.verify_legal_connection(acquired)
+
+
+def main():
+    # Read in input from STDIN (json strings)
+    raw_input = ' '.join(sys.stdin.read().split())
+    # Convert inputted json strings to python types
+    given_map, given_player_state, given_acquired = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+
+    # Gets the internal data defintion versions of the input
+    data_map, player_state, acquired, other_player_connections = convert_json_to_data(given_map, given_player_state, given_acquired)
+    # Checks if the connection that the activte player wishes to acquire can be legally acquired
+    is_legal = check_legal(data_map, player_state, acquired, other_player_connections)
+
+    # Writes the output (true or false) to STDOUT
+    output = json.dumps(is_legal)
+    sys.stdout.write(output)
+
+
+if __name__ == "__main__":
+    main()

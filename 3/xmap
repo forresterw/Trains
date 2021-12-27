@@ -1,0 +1,55 @@
+#!/bin/python3
+import sys, json, math
+
+sys.path.append('../')
+from Trains.Common.map import City, Map
+from Trains.Other.Util.json_utils import convert_json_map_to_data_map, seperate_json_inputs
+
+
+def convert_json_to_data(given_city1: str, given_city2: str, given_map: dict):
+    """
+    Parses the given map into existing internal data definitions.
+        Parameters:
+            given_city1 (str): First city from given input
+            given_city2 (str): Second city from given input
+            given_map (dict): Map from given input
+        Returns:
+            Set of internal City data definitions of given_city1, 
+            and given_city2, internal Map data definition of given_map
+    """
+    width = given_map["width"]
+    height = given_map["height"]
+
+    cities_dict = {}
+    for city in given_map["cities"]:
+        city_struct = City(city[0], math.floor(city[1][0] / width * 100), math.floor(city[1][1] / height * 100))
+        cities_dict[city[0]] = city_struct
+
+    data_map = convert_json_map_to_data_map(given_map)
+
+    return set({cities_dict[given_city1], cities_dict[given_city2]}), data_map
+
+
+def find_connection(cities: set, map: Map):
+    """
+    Determines if the given cities are connected via some path within the given map.
+        Parameters:
+            cities (set): Cities to check if they are connected
+            map (Map): Map of game board
+        Returns:
+            True if the cities in cities are connected via some path
+    """
+    destinations = map.get_feasible_destinations(map.connections)
+    return cities in destinations
+
+
+def main():
+    raw_input = ' '.join(sys.stdin.read().split())
+    given_city1, given_city2, given_map = [json.loads(value) for value in seperate_json_inputs(raw_input)]
+    cities, data_map = convert_json_to_data(given_city1, given_city2, given_map)
+    output = json.dumps(find_connection(cities, data_map))
+    sys.stdout.write(output)
+
+
+if __name__ == "__main__":
+    main()

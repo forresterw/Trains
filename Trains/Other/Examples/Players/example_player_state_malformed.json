@@ -1,0 +1,68 @@
+{
+  "this": {
+    "destination1": [
+      "Austin",
+      "Washington, D.C."
+    ],
+    "destination2": [
+      "Boston",
+      "New York"
+    ],
+    "rails": 4,
+    "cards": {
+      "red": 0,
+      "blue": 4,
+      "green": 0,
+      "white": 0
+    },
+    "acquired": [
+      [
+        "Boston",
+        "New York",
+        "red",
+        3
+      ],
+      [
+        "Chicago",
+        "New York",
+        "white",
+        5
+      ]
+    ]
+  },
+  "game_info": {
+    "unacquired_connections": [
+      [
+        "Los Angeles",
+        "San Diego",
+        "blue",
+        4
+      ],
+      [
+        "Reno",
+        "San Francisco",
+        "red",
+        3
+      ]
+    ],
+    "cards_in_deck": 75,
+    "last_turn": false
+  },
+  "opponent_info": {
+    "connections": [
+      [
+        "Portland",
+        "Seattle",
+        "blue",
+        4
+      ],
+      [
+        "Portland",
+        "San Francisco",
+        "green",
+        5
+      ]
+    ],
+    "number_of_cards": 10
+  }
+}
